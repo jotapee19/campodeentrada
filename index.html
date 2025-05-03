@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Exibir Texto</title>
+</head>
+<body>
+
+  <h2>Digite um texto e clique no botão:</h2>
+
+  <input type="text" id="campoTexto" placeholder="Digite algo...">
+  <button onclick="mostrarTexto()">Mostrar</button>
+
+  <p id="paragrafoExibido"></p>
+
+  <script>
+    function mostrarTexto() {
+      const texto = document.getElementById("campoTexto").value;
+      document.getElementById("paragrafoExibido").textContent = texto;
+    }
+  </script>
+
+</body>
+</html>
